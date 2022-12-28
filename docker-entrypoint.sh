@@ -32,7 +32,7 @@ else
 		cp -f /ors-conf/ors-config.json $source_ors_config
 	fi
 	echo "### Package openrouteservice and deploy to Tomcat ###"
-	mvn -q -f /ors-core/openrouteservice/pom.xml package -DskipTests && \
+#	mvn -q -f /ors-core/openrouteservice/pom.xml package -DskipTests && \
 	cp -f /ors-core/openrouteservice/target/*.war /usr/local/tomcat/webapps/ors.war
 fi
 
